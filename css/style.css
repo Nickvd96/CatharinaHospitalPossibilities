@@ -1,7 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
 
-
+:root {
+    --darkpurple: #5F3869;
+    --lightpurple: #B08BB9;
+    --blue: #78BDDE;
+    --green: #D1E02B;
+    --bluegreen: #48A89B;
+    --orange: #E9C165;
+    --gray: #E7E7E7;
+    --white: #FFFFFF;
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -53,9 +66,10 @@ a {
     margin:0;
     padding:0;
     font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    vertical-align: baseline;
+    background: transparent;
     text-decoration: none;
+    color: var(--white);   
 }
 
 

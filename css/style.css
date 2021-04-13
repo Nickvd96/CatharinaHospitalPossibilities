@@ -72,5 +72,19 @@ a {
     color: var(--white);   
 }
 
+/* Header title */
+h1 {}
 
+/* Label title */
+h2 {
+    font-weight: 700; 
+    font-size: 1.65em;
+}
 
+/* Function/course title */
+h3 {}
+
+p {
+    font-weight: 400;
+    font-size: 0.9em;
+}

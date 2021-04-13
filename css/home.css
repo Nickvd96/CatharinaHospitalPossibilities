@@ -179,8 +179,8 @@ body::-webkit-scrollbar {
 }
 
 .favourites-content, .selftest-content {
-    padding-top: 4%;
-    padding-left: 4%;
+    padding-top: 1.8vh;
+    padding-left: 1.8vh;
     /* padding-right: 2.5%; */
     /* height: 90%; */
     width: 50%;

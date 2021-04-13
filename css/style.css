@@ -13,8 +13,10 @@
 }
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
+.material-icons.md-28 { font-size: 28px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+.material-icons.md-66 { font-size: 66px; }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -79,6 +81,7 @@ h1 {}
 h2 {
     font-weight: 700; 
     font-size: 1.65em;
+    margin-bottom: 0.5vh;
 }
 
 /* Function/course title */

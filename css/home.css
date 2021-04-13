@@ -14,13 +14,54 @@ body::-webkit-scrollbar {
   }
 
 .profile-container {
-    height: 35vh;
+    height: 32vh;
     width: 100%;
     background-color: gray;
     z-index: 0;
 }
+
+.profile-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.profile-container > .profile-wrapper > .material-icons.md-66 {
+    margin-top:0.5vh;
+    margin-right: 0.5vh;
+    width: 20%;
+    height: fit-content;
+    color: white;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+
+    margin-left: 3vh;
+    margin-bottom: 4.5vh;
+}
+
+.profile-header {
+    color: white;
+    font-size: 2.75em;
+    font-weight: 700;
+
+}
+.profile-function {
+    width: fit-content;
+    padding: 0.75vh 1.75vh 0.75vh 1.75vh;
+    color: white;
+    background-color: var(--darkpurple);
+    border-radius: 0.4vh;
+    font-weight: 600;
+}
+
+
 .body-container {
-    margin-top: -5vh;
+    margin-top: -2vh;
     height: 60vh;
     width: 100%;
     background-color: white;
@@ -32,33 +73,71 @@ body::-webkit-scrollbar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    margin-left: 3.5vh;
+    margin-right: 3.5vh;
 
 }
 
 .search-wrapper {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.25vh;
+    margin-bottom: 2.25vh;
+
+    align-items: center;
 
     height: 5vh;
     width: 100%;
     background-color: var(--gray);
     border-radius: 5vh;
-    border: solid 1px black;
 }
 
+.search-wrapper > .material-icons.md-28 {
+    margin-left: 0.75vh;
+    margin-right: 0.25vh;
+    color: var(--darkpurple);
+}
+
+.search-field {
+    padding-left: 0.75vh;
+    padding-right: 1.8vh;
+    height: 95%;
+    width: 100%;
+    color: var(--darkpurple);
+    font-weight: 600;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 0vh 5vh 5vh 0vh;
+    background: none;
+    outline: none;
+}
+
+
 .career-wrapper {
-    margin-bottom: 1vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.75vh;
 
     height: 18vh;
     width: 100%;
     background-color: var(--bluegreen);
     border-radius: 0.8vh;
+    color: var(--white);
+}
+
+.career-content {
+    margin-top: 1.5vh;
+    margin-left: 2.5vh;
+    width: 80%;
+}
+
+.career-wrapper > .material-icons.md-66 {
+    margin-right: 2vh;
+    align-self: center;
 }
 
 .favourites-wrapper {
-    margin-bottom: 1vh;
+    margin-bottom: 1.75vh;
 
     display: flex;
     flex-direction: row;
@@ -67,10 +146,18 @@ body::-webkit-scrollbar {
 }
 
 .favourites {
+    display: flex;
     height: 100%;
     width: 45%;
     background-color: var(--green);
     border-radius: 0.8vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.body-wrapper > .favourites-wrapper, .selftest-wrapper > .favourites, .selftest > .material-icons.md-66 {
+    color: white;
 }
 
 .selftest-wrapper {
@@ -81,14 +168,18 @@ body::-webkit-scrollbar {
 }
 
 .selftest {
+    display: flex;
     height: 100%;
     width: 45%;
     background-color: var(--orange);
     border-radius: 0.8vh;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .favourites-content, .selftest-content {
-    padding-top: 5%;
+    padding-top: 4%;
     padding-left: 4%;
     /* padding-right: 2.5%; */
     /* height: 90%; */
@@ -101,5 +192,6 @@ body::-webkit-scrollbar {
 
 
 
-/* SOURCES
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func */
+/* SOURCES */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func */
+/* https://codepen.io/huange/pen/rbqsD */

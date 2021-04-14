@@ -74,8 +74,8 @@ a {
     color: var(--white);   
 }
 
-/* Header title */
-h1 {}
+/* Header title 
+h1 {}*/
 
 /* Label title */
 h2 {
@@ -84,10 +84,16 @@ h2 {
     margin-bottom: 0.5vh;
 }
 
-/* Function/course title */
-h3 {}
+/* Function/course title 
+h3 {}*/
 
 p {
     font-weight: 400;
     font-size: 0.9em;
+}
+/* login css */
+.login-container{
+  background-color: #48A89B;
+  padding-top: 60vh;
+  padding-left: 20vh;
 }

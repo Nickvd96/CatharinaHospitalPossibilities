@@ -1,0 +1,156 @@
+h5 {
+    color: var(--darkpurple);
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.body-container {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--gray);
+}
+
+.body-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 3.5vh;
+    margin-right: 3.5vh;
+}
+
+.logo-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 3.5vh;
+}
+
+.logo-text-wrapper {
+    margin-bottom: 1vh;
+    margin-right: 2vh;
+}
+
+.logo-subtitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-subtitle > p {
+    font-size: 1.05em;
+    font-weight: 700;
+}
+
+.blue-text {
+    color: var(--blue);
+}
+
+.purple-text {
+    color: var(--darkpurple)
+}
+
+.logo {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: var(--darkpurple);
+}
+
+.product-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    height: 27.5vh;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 27.5vh;
+    width: 27.5vh;
+    border-radius: 50%;
+    background-color: var(--bluegreen);
+}
+
+.product-wrapper > h5, p {
+    color: white;
+}
+
+.login-container {
+    height: 10vh;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.username-wrapper, .password-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.25vh;
+    margin-bottom: 2.25vh;
+
+    align-items: center;
+
+    height: 5vh;
+    background-color: white;
+    border-radius: 5vh;
+}
+
+.login-wrapper > .password-wrapper > .material-icons.md-28 {
+    margin-left: 0.75vh;
+    margin-right: 0.25vh;
+    color: var(--darkpurple);
+}
+
+.login-wrapper > .username-wrapper > .material-icons.md-28 {
+    margin-left: 0.75vh;
+    margin-right: 0.25vh;
+    color: var(--darkpurple);
+}
+
+#password-visibility {
+    margin-left: -0.5vh;
+    margin-right: 1vh;
+}
+
+.username-field, .password-field {
+    padding-left: 0.75vh;
+    padding-right: 1.8vh;
+    height: 95%;
+    width: 100%;
+    color: var(--darkpurple);
+    font-weight: 600;
+    font-size: 0.9em;
+    outline: none;
+    border: none;
+    border-radius: 0vh 5vh 5vh 0vh;
+    background: none
+}
+
+.button-guest, .button-member {
+    padding: 1vh 2.5vh 1vh 2.5vh;
+    color: white;
+    border-radius: 0.5vh;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+}
+
+.button-member {
+    background-color: var(--darkpurple);
+    padding-right: 4vh;
+    padding-left: 4vh;
+}
+
+.button-guest {
+    background-color: var(--blue)
+}

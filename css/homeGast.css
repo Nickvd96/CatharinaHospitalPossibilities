@@ -1,0 +1,165 @@
+body {
+    overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.profile-container {
+    height: 32vh;
+    width: 100%;
+    background-color: gray;
+    z-index: 0;
+}
+
+.profile-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.profile-container > .profile-wrapper > .material-icons.md-66 {
+    margin-top:0.5vh;
+    margin-right: 0.5vh;
+    width: 20%;
+    height: fit-content;
+    color: white;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+
+    margin-left: 3vh;
+    margin-bottom: 4.5vh;
+}
+
+.profile-header {
+    color: white;
+    font-size: 2.75em;
+    font-weight: 700;
+
+}
+.profile-function {
+    width: fit-content;
+    padding: 0.75vh 1.75vh 0.75vh 1.75vh;
+    color: white;
+    background-color: var(--darkpurple);
+    border-radius: 0.4vh;
+    font-weight: 600;
+}
+
+.body-container {
+    margin-top: -2vh;
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-radius: 5px 5px 0 0;
+}
+
+.body-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 3.5vh;
+    margin-right: 3.5vh;
+}
+
+.career-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.75vh;
+
+    height: 18vh;
+    width: 100%;
+    background-color: var(--bluegreen);
+    border-radius: 0.8vh;
+    color: var(--white);
+}
+
+.career-wrapper > .career-content > p {
+    color: white;
+}
+
+.career-content {
+    margin-top: 1.5vh;
+    margin-left: 2.5vh;
+    width: 80%;
+}
+
+.career-wrapper > .material-icons.md-66 {
+    margin-right: 2vh;
+    align-self: center;
+}
+
+.favourites-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 13vh;
+    width: 100%;
+
+    filter: grayscale(1);
+    opacity: 50%;
+}
+
+.favourites {
+    display: flex;
+    height: 100%;
+    width: 45%;
+    background-color: var(--green);
+    border-radius: 0.8vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.body-wrapper > .favourites-wrapper, .selftest-wrapper > .favourites, .selftest > .material-icons.md-66 {
+    color: white;
+}
+
+.selftest-wrapper {
+    margin-bottom: 1.75vh;
+
+    display: flex;
+    flex-direction: row;
+    height: 13vh;
+    width: 100%;
+}
+
+.selftest {
+    display: flex;
+    height: 100%;
+    width: 45%;
+    background-color: var(--orange);
+    border-radius: 0.8vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.favourites-content, .selftest-content {
+    padding-top: 1.8vh;
+    padding-left: 1.8vh;
+    width: 50%;
+    color: var(--darkpurple);
+    justify-content: center;
+    word-wrap: break-word;
+}
+
+
+
+/* SOURCES */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func */
+/* https://codepen.io/huange/pen/rbqsD */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */

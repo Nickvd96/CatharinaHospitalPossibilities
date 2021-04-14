@@ -50,6 +50,7 @@ footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
+
 nav ul {
     list-style:none;
 }
@@ -74,8 +75,12 @@ a {
     color: var(--white);   
 }
 
-/* Header title 
-h1 {}*/
+/* Header title */
+h1 {
+    font-weight: 700; 
+    font-size: 2em;
+    color: white;
+}
 
 /* Label title */
 h2 {
@@ -87,6 +92,12 @@ h2 {
 /* Function/course title 
 h3 {}*/
 
+h4 {
+    font-weight: 700; 
+    font-size: 1em;
+    color: white;
+}
+
 p {
     font-weight: 400;
     font-size: 0.9em;
@@ -96,4 +107,118 @@ p {
   background-color: #48A89B;
   padding-top: 60vh;
   padding-left: 20vh;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.25vh;
+    margin-bottom: 2.25vh;
+
+    align-items: center;
+
+    height: 5vh;
+    width: 100%;
+    background-color: var(--gray);
+    border-radius: 5vh;
+}
+
+.search-wrapper > .material-icons.md-28 {
+    margin-left: 0.75vh;
+    margin-right: 0.25vh;
+    color: var(--darkpurple);
+}
+
+.search-field {
+    padding-left: 0.75vh;
+    padding-right: 1.8vh;
+    height: 95%;
+    width: 100%;
+    color: var(--darkpurple);
+    font-weight: 600;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 0vh 5vh 5vh 0vh;
+    background: none;
+    outline: none;
+}
+
+.filter-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 1.5vh;
+    z-index: 1;
+}
+
+.filter-wrapper > div {
+    width: fit-content;
+
+    padding: 0.5vh 1vh 0.5vh 1vh;
+    border-radius: 0.5vh;
+    background-color: var(--darkpurple);
+}
+
+.filter-wrapper > .filter-2, .filter-3, .filter-4 {
+    margin-left: 1vh;
+}
+
+.label-container {
+    padding-bottom: 10vh;
+    margin-right: 3.5vh;
+    top: 23.4vh;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    z-index: 0;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.1vh;
+    padding: 2vh 2.5vh 2vh 2.5vh;
+
+    background-color: var(--blue);
+    border-radius: 0.8vh;
+}
+
+.label > .label-content > h2, p {
+    color:var(--darkpurple)
+}
+
+.label > .material-icons.md-66 {
+    margin-left: 1vh;
+    color: var(--darkpurple);
+    opacity: 50%;
+}
+
+
+@media screen and (max-height: 760px) {
+    .label-container {
+        top: 24vh;
+        /* background-color: yellow; */
+    }
+}
+
+@media screen and (max-height: 720px) {
+    .label-container {
+        top: 24.5vh;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (max-height: 680px) {
+    .label-container {
+        top: 25.5vh;
+        /* background-color: green; */
+    }
+}
+
+@media screen and (max-height: 620px) {
+    .label-container {
+        top: 27vh;
+        /* background-color: blue; */
+    }
 }

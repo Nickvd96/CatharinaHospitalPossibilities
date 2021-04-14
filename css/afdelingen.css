@@ -1,0 +1,35 @@
+.page-header {
+    padding: 0vh 0vh 0.5vh 0vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--bluegreen);
+}
+
+.page-header > .material-icons.md-48, .material-icons.md-66 {
+    margin-top:0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    height: fit-content;
+    color: white;
+}
+
+.body-container {
+    /* margin-top: -2vh; */
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-radius: 5px 5px 0 0;
+}
+
+.body-wrapper {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 3.5vh;
+    margin-right: 3.5vh;
+}

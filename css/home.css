@@ -146,7 +146,7 @@ body::-webkit-scrollbar {
 }
 
 .favourites-content, .selftest-content {
-    padding-top: 1.8vh;
+    padding-top: 1.vh;
     padding-left: 1.8vh;
     width: 50%;
     color: var(--darkpurple);

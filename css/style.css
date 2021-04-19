@@ -190,6 +190,7 @@ p {
 }
 
 
+
 @media screen and (max-height: 760px) {
     .label-container {
         top: 24vh;

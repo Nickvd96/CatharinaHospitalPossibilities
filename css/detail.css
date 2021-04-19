@@ -1,0 +1,118 @@
+body {
+    overflow: hidden !important; /* Hide scrollbars */
+  }
+
+.page-header {
+    padding: 0vh 0vh 0.5vh 0vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--bluegreen);
+}
+
+.page-header > .material-icons.md-48, .material-icons.md-66 {
+    margin-top:0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    height: fit-content;
+    color: white;
+}
+
+.body-container {
+    /* margin-top: -2vh; */
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-radius: 5px 5px 0 0;
+}
+
+.body-wrapper {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 3.5vh;
+    margin-right: 3.5vh;
+    
+}
+
+.label-container {
+    top: 14vh !important;
+}
+
+
+.label-content span {
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.label-content span img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.label-content p {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: 5px;
+}
+
+.label-content img {
+    height: 172px;
+    width: 100%;
+    border-radius: 0.8vh;
+}
+
+.label-content-info {
+    padding: 2vh 2.5vh 2vh 2.5vh;
+    position: relative;
+}
+
+.label-data {
+    display: flex;
+}
+
+.label-data span {
+   flex-direction: row;
+   margin-right: 10px;
+}
+
+.label-data img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.label-data p {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: 5px;
+}
+
+/* Losse Classes */
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.bigger {
+    height: 100px;
+}
+
+.upperright {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin-right: 0 !important;
+}
+
+.upperright p {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+

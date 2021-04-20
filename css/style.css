@@ -162,6 +162,7 @@ p {
     padding-bottom: 10vh;
     margin-right: 3.5vh;
     top: 23.4vh;
+    left: 1vh;
     bottom:0;
     position:fixed;
     overflow-y:scroll;

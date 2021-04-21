@@ -36,83 +36,124 @@ body {
     flex-direction: column;
     margin-left: 3.5vh;
     margin-right: 3.5vh;
-    
 }
 
 .label-container {
-    top: 14vh !important;
+    display: flex;
+    flex-direction: column;
 }
 
-
-.label-content span {
-    flex-direction: row;
-    margin-right: 10px;
+.label-container .material-icons.md-36 {
+    color: #5F3869;
 }
 
-.label-content span img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+.label-image {
+    margin-bottom: -1vh;
+    z-index: 1;
 }
 
-.label-content p {
-    font-size: 14px;
-    display: inline-block;
-    vertical-align: 5px;
-}
-
-.label-content img {
-    height: 172px;
+.label-image img {
     width: 100%;
+    padding: 0;
     border-radius: 0.8vh;
 }
 
-.label-content-info {
-    padding: 2vh 2.5vh 2vh 2.5vh;
+.label { 
     position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3vh 0;
+    background-image: linear-gradient(#E7E7E7, #FFF4D9);
+}
+
+.label-substractions-top {
+    position: absolute;
+    right: 0;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    z-index: 0;
+    opacity: 0.5;
+} 
+
+.label .label-substractions-bottom {
+    position: absolute;
+    right: 0;
+}
+
+.label-substractions-bottom{
+    position: absolute;
+    bottom: 0;
+}
+
+.label-title {
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+}
+
+.label-title span {
+    display: flex;
+    flex-direction: row;
+}
+
+.label-title span h1 {
+    font-size: 20pt;
+    color: #5F3869;
+}
+
+.label-title span img {
+    width: 4.5vh;
+    height: 4vh;
+    margin-left: 0.7vh
+}
+
+.label-content {
+    padding: 2vh 2.5vh 2vh 2.5vh;
+    z-index: 1;
 }
 
 .label-data {
     display: flex;
+    flex-direction: row;
 }
 
 .label-data span {
-   flex-direction: row;
-   margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1vh
 }
 
-.label-data img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+.label-data div {
+    margin-right: 1vh
 }
 
-.label-data p {
-    font-size: 14px;
-    display: inline-block;
-    vertical-align: 5px;
+.label-data span img {
+    width: 3.5vh;
+    height: 3vh;
+    margin-right: 1vh
 }
 
-/* Losse Classes */
-
-.nopadding {
-    padding: 0 !important;
+.label-data .material-icons.md-36 {
+    font-size: 16pt;
 }
 
-.bigger {
-    height: 100px;
+.label-data .date {
+    margin-left: 5vh;
 }
 
-.upperright {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    margin-right: 0 !important;
+.label-description, .label-description2 {
+    padding-top: 2vh;
+    font-size: 14pt;
 }
 
-.upperright p {
-    font-size: 20px !important;
-    font-weight: bold;
+.label-description2 {
+    padding-top: 0;
 }
+
+
+
+
+
+
 
 

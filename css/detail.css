@@ -1,0 +1,193 @@
+body {
+    overflow: hidden !important; /* Hide scrollbars */
+  }
+
+.page-header {
+    padding: 0vh 0vh 0.5vh 0vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-color: var(--bluegreen); */
+    z-index: 1;
+}
+
+.page-header > .material-icons.md-48, .material-icons.md-66 {
+    margin-top:0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    height: fit-content;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-image {
+    position: absolute;
+    height: 74px;
+    width: 100%;
+    background-image: url('/Images/menu_career_background.png');
+    background-position: 0px -5vh;
+    background-repeat: no-repeat;
+}
+
+.menu-image img{
+    width: 100%;
+}
+
+.menu-bar {
+    position: absolute;
+    background-image: linear-gradient(var(--bluegreen), white);
+    height: 74px;
+    width: 100%;
+    opacity: 0.90;
+}
+
+.page-header h1 {
+    z-index: 1;
+}
+
+.body-container {
+    /* margin-top: -2vh; */
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-radius: 5px 5px 0 0;
+}
+
+.body-wrapper {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 3.5vh;
+    margin-right: 3.5vh;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    top: 12vh;
+}
+
+.label-container .material-icons.md-36 {
+    color: #5F3869;
+}
+
+.label-image {
+    margin-bottom: -1vh;
+    z-index: 1;
+}
+
+.label-image img {
+    width: 100%;
+    padding: 0;
+    border-radius: 0.8vh;
+}
+
+.label { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3vh 0;
+    background-image: linear-gradient(#E7E7E7, #FFF4D9);
+}
+
+.label-substractions-top {
+    position: absolute;
+    right: 0;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    z-index: 0;
+    opacity: 0.5;
+} 
+
+.label .label-substractions-bottom {
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+}
+
+.label-substractions-bottom{
+    position: absolute;
+    bottom: 0;
+}
+
+.label-title {
+    position: absolute;
+    top: 1.5vh;
+    right: 1vh;
+}
+
+.label-title span {
+    display: flex;
+    flex-direction: row;
+}
+
+.label-title span h1 {
+    font-size: 16pt;
+    color: #5F3869;
+}
+
+.label-title span img {
+    width: 4.5vh;
+    height: 4vh;
+    margin-left: 0.7vh
+}
+
+.label-title .material-icons.md-36 {
+    font-size: 20pt;
+}
+
+.label-content {
+    padding: 2vh 2.5vh 2vh 2.5vh;
+    z-index: 1;
+}
+
+.label-data {
+    display: flex;
+    flex-direction: row;
+}
+
+.label-data span {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0.5vh
+}
+
+.label-data div {
+    margin-right: 0.5vh
+}
+
+.label-data span img {
+    width: 3.5vh;
+    height: 3vh;
+    margin-right: 1vh
+}
+
+.label-data .material-icons.md-36 {
+    font-size: 16pt;
+}
+
+.label-data .time {
+    margin-left: 1vh;
+}
+
+.label-description, .label-description2 {
+    padding-top: 2vh;
+    font-size: 14pt;
+}
+
+.label-description2 {
+    padding-top: 0;
+}
+
+
+
+
+
+
+
+

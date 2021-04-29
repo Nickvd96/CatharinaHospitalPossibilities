@@ -1,0 +1,213 @@
+body {
+    overflow: hidden !important; /* Hide scrollbars */
+  }
+
+.page-header {
+    padding: 0vh 0vh 0.5vh 0vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-color: var(--bluegreen); */
+    z-index: 1;
+}
+
+.page-header > .material-icons.md-48, .material-icons.md-66 {
+    margin-top:0.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    height: fit-content;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-image {
+    position: absolute;
+    height: 73px;
+    width: 100%;
+    background-image: url('/Images/menu_test_background.png');
+    background-position: 0px -5vh;
+    background-repeat: no-repeat;
+}
+
+.menu-image img{
+    width: 100%;
+}
+
+.menu-bar {
+    position: absolute;
+    background-image: linear-gradient(#E9C165, white);
+    height: 74px;
+    width: 100%;
+    opacity: 0.90;
+}
+
+.page-header h1 {
+    z-index: 1;
+}
+
+.body-container {
+    /* margin-top: -2vh; */
+    height: 60vh;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    border-radius: 5px 5px 0 0;
+}
+
+.body-wrapper {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 3.5vh;
+    margin-right: 3.5vh;
+}
+
+.label-container {
+    /* display: flex; */
+    flex-direction: column;
+    top: 12vh;
+    width: 318px;
+}
+
+.label-container p {
+    font-size: 14pt;
+    color: #5F3869;
+    padding-bottom: 3vh;
+}
+
+.label-container h2 {
+    color: #5F3869;
+    padding-bottom: 1vh
+}
+
+.label { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3vh 0;
+    background-image: linear-gradient(#E7E7E7, #EBD9FF);
+    width: 100%;
+    height: 104px;
+} 
+
+.label2 { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3vh 0;
+    background-image: linear-gradient(#E7E7E7, #EBD9FF);
+    width: 100%;
+    height: 176px;
+    margin-bottom: 3vh;
+} 
+
+.label3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3vh 0;
+    background-image: linear-gradient(#E7E7E7, #FFF4D9);
+    width: 100%;
+    height: 104px;
+    margin-bottom: 3vh;
+}
+
+.label-content {
+    padding: 2vh 2.5vh 2vh 2.5vh;
+    z-index: 1;
+}
+
+.zelftest-title h1 {
+    position: absolute;
+    top: 6vh;
+    right: 2.5vh;
+    font-size: 31px;
+    color: #5F3869;
+}
+
+.zelftestresultaat-title h1 {
+    padding-top: 2vh;
+    color: #5F3869;
+}
+
+.label-content h3 {
+    font-size: 28px;
+    color: #5F3869;
+}
+
+.label-icon {
+    position: absolute;
+    top: 4vh;
+    left: 2.5vh;
+}
+
+.label-icon img {
+    width: 65px;
+    height: 65px;
+}
+
+.label-icon2 {
+    position: absolute;
+    top: 4vh;
+    right: 2.5vh;
+}
+
+.label-icon, .label-icon2 img {
+    width: 65px;
+    height: 65px;
+    opacity: 0.5
+}
+
+.label .label-substractions-bottom, .label2 .label-substractions-bottom, .label3 .label-substractions-bottom  {
+    position: absolute;
+    right: 5vh;
+    opacity: 0.5;
+}
+
+.label-substractions-bottom{
+    position: absolute;
+    bottom: 0;
+}
+
+.label-data {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: relative;
+}
+
+.label-data span {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0.5vh
+}
+
+.label-data p {
+    font-size: 14pt;
+}
+
+.label-description {
+    padding-top: 2vh;
+    font-size: 14pt;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 # CatharinaHospitalPossibilities
  Een UX oprdracht voor het Catharina ziekenhuis voor carriere mogelijkheden
 
- <b>PWA Installatie<b>
+ <b>PWA Installatie</b>
  Stap 1:
  ga naar de website https://i356100.hera.fhict.nl/ (word veranderd na overdragt project)
 

@@ -181,7 +181,7 @@ p {
     z-index: 0;
 }
 
-.label {
+.label, .label2, .label3, .label4 {
     display: flex;
     flex-direction: row;
     margin-bottom: 1.1vh;

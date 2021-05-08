@@ -1,0 +1,80 @@
+.page-header {
+    background: linear-gradient(var(--blue), var(--gray));
+}
+
+.filter-wrapper {
+    justify-content: space-between;
+}
+
+#filter-alles {
+    background-color: var(--darkpurple);
+}
+
+.filter-wrapper > div {
+    font-size: 14px;
+    width: fit-content;
+    font-weight: 700;
+    color: white;
+
+    padding: 0.7vh 1.2vh 0.7vh 1.2vh;
+    border-radius: 0.5vh;
+    background-color: var(--lightpurple);
+}
+
+/* FIX THIS GLOBALLY */
+.material-icons.md-48 {
+    margin-left: 3.5vw;
+}
+
+
+
+/* MOVE EVERYTHING BELOW TO STYLE.CSS */
+.label-content, .material-icons.md-66 {
+    position: relative;
+    z-index: 2;
+}
+
+.label:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: 12%;
+    bottom: 0%;
+    width: 30%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 0%;
+    background-size: contain;
+    z-index: 1;
+}
+
+.label.afdeling:before {
+    background-image: url('/Images/afdelingShapesSmall.png');
+}
+
+.label.functie:before {
+    background-image: url('/Images/functieShapesSmall.png');
+}
+
+.label.opleiding:before {
+    background-image: url('/Images/opleidingShapesSmall.png');
+}
+
+
+.label.afdeling {
+    position: relative;
+    /* background: linear-gradient(var(--gray), var(--blue)); */
+    background: linear-gradient(var(--gray), #a5cee1);
+}
+
+.label.functie {
+    position: relative;
+    /* background: linear-gradient(var(--gray), var(--orange)); */
+    background: linear-gradient(var(--gray), #e8cf95);
+}
+
+.label.opleiding {
+    position: relative;
+    /* background: linear-gradient(var(--gray), var(--green)); */
+    background: linear-gradient(var(--gray), #d9e274);
+}

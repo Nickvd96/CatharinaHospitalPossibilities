@@ -1,0 +1,33 @@
+/* .label.afdeling {} */
+
+.label.functie {
+    background-color: var(--orange);
+}
+
+.label.opleiding {
+    background-color: var(--green);
+}
+
+.filter-wrapper {
+    justify-content: space-between;
+}
+
+.filter-wrapper > div {
+    font-size: 14px;
+    width: fit-content;
+    font-weight: 700;
+    color: white;
+
+    padding: 0.7vh 1.2vh 0.7vh 1.2vh;
+    border-radius: 0.5vh;
+    background-color: var(--lightpurple);
+}
+
+#filter-alles {
+    background-color: var(--darkpurple);
+}
+
+.material-icons.md-48 {
+    margin-left: 3.5vw;
+}
+

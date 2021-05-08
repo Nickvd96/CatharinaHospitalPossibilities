@@ -4,8 +4,6 @@ let currentFilter = 'filter-alles';
 let currentSearch = '';
 // console.log(document.querySelectorAll('.filter'));
 
-// currentSearch.toLowerCase();
-
 function applyFilter() {
     // CHANGE COLORS OF FILTER BUTTONS AND UPDATE CURRENTFILTER TO TARGET
     for (let j = 0 ; j < filters.length; j++) {
@@ -49,7 +47,7 @@ searchBar.addEventListener('input', function (e) {
 
     // CONVERT SEARCH INPUT TO LOWER CASE
     currentSearch = e.target.value.toLowerCase();
-
+    
     applyFilter();
     }
 );

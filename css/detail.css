@@ -45,7 +45,10 @@ body {
 }
 
 .page-header h1 {
+    position: absolute;
     z-index: 1;
+    top: 2vh;
+    left: 15vh;
 }
 
 .body-container {

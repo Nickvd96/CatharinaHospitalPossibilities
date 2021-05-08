@@ -7,6 +7,7 @@
         <meta name="theme-color" content="#009578">
 
         <title>Home</title>
+        <link rel="stylesheet" href="css/sidemenu.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/home.css">
@@ -15,6 +16,7 @@
         <!-- <script src="src/index.js"></script> -->
 
     </head>
+
     <body>
         <nav>
             <ul>
@@ -26,18 +28,36 @@
             </ul>
         </nav>
 
-          <div class="profile-container">
+        <div class="profile-container">
             <div class="profile-wrapper">
                 <div class="profile-info">
                     <div class="profile-header">Jan</div>
                     <div class="profile-function">Teamleider</div>
                 </div>
-                <span class="material-icons md-66">manage_accounts</span>
+                <button class="openbtn" onclick="openNav()"><span class="material-icons md-66">manage_accounts</span></button>
             </div>
-          </div>
+        </div>
 
-          <div class="body-container">
-              <div class="body-wrapper">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="material-icons md-66">close</span></a>
+            <h1>Profiel</h1>
+            <img src="Images/user.png">
+            <div class="links">
+                <a href="#">Upload nieuwe profielfoto</a>
+                <a href="#">Instellingen</a>
+                <a href="#">Uitloggen</a>
+            </div>
+            <div class="subtractions">
+                <img src="Images/subtractions_4.png">
+            </div>
+        </div>
+
+        <div id="main">
+            
+
+
+            <div class="body-container">
+                <div class="body-wrapper">
                 <div class="search-wrapper">
                     <span class="material-icons md-28">search</span>
                     <input type="text" class="search-field" placeholder="Zoeken">
@@ -74,8 +94,21 @@
                         <p>Test hier jouw skills en bekijk welke job bij jou past</p>
                     </div>
                 </div>
-              </div>
-          </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "300px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+        </script>
+
     </body>
     
 </html>

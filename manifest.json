@@ -1,0 +1,25 @@
+{
+    
+    "name": "Hospital Career App",
+    "short_name": "Career App",
+    "start_url": "https://i356100.hera.fhict.nl/",
+    "background_color": "#FFFFFF",
+    "theme_color": "#009578",
+    "display": "standalone",
+    "icons":
+    [
+        {
+            "src": "/Images/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/Images/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+
+
+}

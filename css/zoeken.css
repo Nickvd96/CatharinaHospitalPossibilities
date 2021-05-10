@@ -29,7 +29,7 @@
 
 
 /* MOVE EVERYTHING BELOW TO STYLE.CSS */
-.label-content, .material-icons.md-66 {
+/* .label-content, .material-icons.md-66 {
     position: relative;
     z-index: 2;
 }
@@ -58,23 +58,23 @@
 
 .label.opleiding:before {
     background-image: url('/Images/opleidingShapesSmall.png');
-}
+} */
 
 
-.label.afdeling {
-    position: relative;
+/* .label.afdeling {
+    position: relative; */
     /* background: linear-gradient(var(--gray), var(--blue)); */
-    background: linear-gradient(var(--gray), #a5cee1);
-}
+    /* background: linear-gradient(var(--gray), #a5cee1);
+} */
 
-.label.functie {
-    position: relative;
+/* .label.functie {
+    position: relative; */
     /* background: linear-gradient(var(--gray), var(--orange)); */
-    background: linear-gradient(var(--gray), #e8cf95);
-}
+    /* background: linear-gradient(var(--gray), #e8cf95);
+} */
 
-.label.opleiding {
-    position: relative;
+/* .label.opleiding {
+    position: relative; */
     /* background: linear-gradient(var(--gray), var(--green)); */
-    background: linear-gradient(var(--gray), #d9e274);
-}
+    /* background: linear-gradient(var(--gray), #d9e274);
+} */

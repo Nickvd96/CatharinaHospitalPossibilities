@@ -80,3 +80,10 @@
     /* background: linear-gradient(var(--gray), var(--green)); */
     background: linear-gradient(var(--gray), #d9e274);
 }
+
+.page-header h1 {
+    position: absolute;
+    z-index: 1;
+    top: 2vh;
+    left: 15vh;
+}

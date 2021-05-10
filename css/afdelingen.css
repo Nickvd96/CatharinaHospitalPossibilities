@@ -33,3 +33,10 @@
     margin-left: 3.5vh;
     margin-right: 3.5vh;
 }
+
+.page-header h1 {
+    position: absolute;
+    z-index: 1;
+    top: 2vh;
+    left: 15vh;
+}

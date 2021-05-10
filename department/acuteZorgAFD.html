@@ -1,5 +1,4 @@
 <!-- overzicht van alle functies per gekozen afdeling -->
-<!-- overzicht van alle afdelingen & opleidingen-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +9,6 @@
 
         <title>Functies Acute zorg</title>
 
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/menu.css">
         <link rel="stylesheet" href="/css/afdelingen.css">
@@ -19,12 +16,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round"rel="stylesheet">
         <!-- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"> -->
-
-        <!-- <script src="src/index.js"></script> -->
-
-        
-
     </head>
+
     <body>
         <nav>
             <ul>
@@ -40,7 +33,7 @@
             <a href="#" onclick="javascript:window.history.back(-1);return false;">
                 <span class="material-icons md-48">arrow_back_ios</span>
             </a>
-            <h1 class="AFD">Afdeling AZ</h1>
+            <h1 class="department-title">Carrière</h1>
         </div>
 
         <div class="body-container">
@@ -51,46 +44,40 @@
                 </div>
 
                 <div class="filter-wrapper">
-                    <div class="filter-1"><h4>Bekijk hier alle functies van AZ</h4>
-                        </div>
-                    
+                    <div id="filter-functie" class="filter"><h4>Alle functies van Acute Zorg</h4></div>
                 </div>
-                <!-- Div that is shown -->
-                
-
-
-
-                <div class="label-containerAFD">
-                    
-                    <div class="label">
-                        <div class="label-content"><h2>Cardiaccare verpleegkundige</h2><p>Bekijk hier alle informatie over deze functie</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>Intensivecare verpleegkundige</h2><p>Bekijk hier alle informatie over deze functie</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>Mediumcare verpleegkundige</h2><p>Bekijk hier alle informatie over deze functie</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>SEH verpleegkundige</h2><p>Bekijk hier alle informatie over deze functie</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>Ambulance verpleegkundige</h2><p>Bekijk hier alle informatie over deze functie</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>Recovery verpleegkundige</h2><p>Bekijk hier alle informatie over deze functie</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                </div>
-              
- <!-- Div that is hidden --> 
  
-               
+                <div class="label-container">
+                    <a href="/detailFuncties.html">
+                        <div id="filter-functie" class="label functie">
+                            <div class="label-content">
+                                <h2>Functie 1</h2>
+                                <p>Bekijk hier alle informatie van de functie</p>
+                            </div>
+                            <span class="material-icons md-66">account_circle</span>
+                        </div>
+                    </a>
+                    <a href="/detailFuncties.html">
+                        <div id="filter-functie" class="label functie">
+                            <div class="label-content">
+                                <h2>Functie 2</h2>
+                                <p>Bekijk hier alle informatie van de functie</p>
+                            </div>
+                            <span class="material-icons md-66">account_circle</span>
+                        </div>
+                    </a>
+                    <a href="/detailFuncties.html">
+                        <div id="filter-functie" class="label functie">
+                            <div class="label-content">
+                                <h2>Functie 3</h2>
+                                <p>Bekijk hier alle informatie van de functie</p>
+                            </div>
+                            <span class="material-icons md-66">account_circle</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
+        <script src="/js/department.js"></script>
     </body>
+</html>

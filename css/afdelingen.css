@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--bluegreen);
+    background: linear-gradient(var(--bluegreen), var(--gray));
 }
 
 .page-header > .material-icons.md-48, .material-icons.md-66 {
@@ -39,4 +39,28 @@
     z-index: 1;
     top: 2vh;
     left: 15vh;
+}
+
+.filter {
+    cursor: pointer;
+}
+
+.filter-wrapper {
+    justify-content: space-between;
+}
+
+.filter-wrapper > div {
+    font-size: 14px;
+    width: fit-content;
+    font-weight: 700;
+    color: white;
+
+    padding: 0.7vh 3vh 0.7vh 3vh;
+    border-radius: 0.5vh;
+    background-color: var(--lightpurple);
+}
+
+/* SPACING FIX */
+.department-title {
+    margin-left: 0;
 }

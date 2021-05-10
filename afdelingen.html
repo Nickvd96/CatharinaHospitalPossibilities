@@ -48,9 +48,8 @@
                 </div>
 
                 <div class="filter-wrapper">
-                    <div class="filter-1"><h4>Afdelingen</h4>
-                        </div>
-                    <div class="filter-2"><h4>Opleidingen</h4></div>
+                    <div id="filter-afdeling" class="filter">Afdeling</div>
+                    <div id="filter-opleiding" class="filter">Opleiding</div>
                 </div>
                 <!-- Div that is shown -->
                 
@@ -60,74 +59,113 @@
                 <div class="label-container">
 
                     <a href="/department/acuteZorgAFD.html">
-                    <div class="label">
-                        <div class="label-content"><h2>Acute Zorg</h2> 
-                            <p>Bekijk hier alle functies van de acute zorg</p>
-                        </div>
-                            <span class="material-icons md-66">supervised_user_circle</span>   
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>Acute Zorg</h2>
+                                <p>Bekijk hier alle functies van de acute zorg</p>
+                            </div>
+                            <span class="material-icons md-66">supervised_user_circle</span>
                         </div>
                     </a>
 
                     <a href="/department/medischeOndersteuningAFD.html">
-                    <div class="label">
-                        <div class="label-content"><h2>Medische ondersteuning</h2>                          
-                            <p>Bekijk hier alle functies voor acute medische ondersteuning</p> 
-                        </div>
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>Medische Ondersteuning</h2>
+                                <p>Bekijk hier alle functies voor Medische Ondersteuning</p>
+                            </div>
                             <span class="material-icons md-66">supervised_user_circle</span>
                         </div>
                     </a>
 
                     <a href="/department/SpoedEisendeHulpAFD.html">
-                    <div class="label">
-                        <div class="label-content"><h2>SEH</h2>
-                            <p>Bekijk hier alle functies voor Spoedeisende hulp</p>
-                        </div>
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>SEH</h2>
+                                <p>Bekijk hier alle functies voor Spoedeisende Hulp</p>
+                            </div>
                             <span class="material-icons md-66">supervised_user_circle</span>
                         </div>
                     </a>
 
                     <a href="/department/IntensiveEnMediumCareAFD.html">
-                    <div class="label">
-                        <div class="label-content"><h2>IC&MC</h2>
-                            <p>Bekijk hier alle functies voor Intensive Care & Medium Care</p>
-                        </div>
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>IC&MC</h2>
+                                <p>Bekijk hier alle functies voor Intensive Care & Medium Care</p>
+                            </div>
                             <span class="material-icons md-66">supervised_user_circle</span>
                         </div>
                     </a>
 
                     <a href="/department/operatieKamerAFD.html">
-                    <div class="label">
-                        <div class="label-content"><h2>OK</h2>
-                            <p>Bekijk hier alle functies van de Operatiekamer</p>
-                        </div>
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>OK</h2>
+                                <p>Bekijk hier alle functies van de Operatiekamer</p>
+                            </div>
                             <span class="material-icons md-66">supervised_user_circle</span>
                         </div>
                     </a>
 
                     <a href="/department/EHHAFD.html">
-                    <div class="label">
-                        <div class="label-content"><h2>EHH</h2>
-                            <p>Bekijk hier alle functies van de Eerst Hart Hulp</p>
-                        </div>
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>EHH</h2>
+                                <p>Bekijk hier alle functies van de Eerste Hart Hulp</p>
+                            </div>
                             <span class="material-icons md-66">supervised_user_circle</span>
                         </div>
                     </a>
 
                     <a href="/department/CCUAFD.html">
-                    <div class="label">
-                        <div class="label-content"><h2>CCU</h2>
-                            <p>Bekijk hier alle functies van de Cardiac Care Unit</p>
-                        </div>
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>CCU</h2>
+                                <p>Bekijk hier alle functies van de Cardiac Care Unit</p>
+                            </div>
                             <span class="material-icons md-66">supervised_user_circle</span>
                         </div>
                     </a>
 
                     <a href="/department/HCKAFD.html">
-                    <div class="label">
-                        <div class="label-content"><h2>HCK</h2><p>Bekijk hier alle functies van de Hartcatherisatiekamers</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                </a>    
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>HCK</h2>
+                                <p>Bekijk hier alle functies van de Hartcatherisatiekamers</p>
+                            </div>
+                            <span class="material-icons md-66">supervised_user_circle</span>
+                        </div>
+                    </a>
+
+                    <a href="detailOpleidingen.html">
+                        <div id="filter-opleiding" class="label opleiding">
+                            <div class="label-content">
+                                <h2>Opleiding 1</h2>
+                                <p>Bekijk hier alle informatie van de opleiding</p>
+                            </div>
+                            <span class="material-icons md-66">shopping_bag</span>
+                        </div>
+                    </a>
+                    <a href="detailOpleidingen.html">
+                        <div id="filter-opleiding" class="label opleiding">
+                            <div class="label-content">
+                                <h2>Opleiding 2</h2>
+                                <p>Bekijk hier alle informatie van de opleiding</p>
+                            </div>
+                            <span class="material-icons md-66">shopping_bag</span>
+                        </div>
+                    </a>
+                    <a href="detailOpleidingen.html">
+                        <div id="filter-opleiding" class="label opleiding">
+                            <div class="label-content">
+                                <h2>Opleiding 3</h2>
+                                <p>Bekijk hier alle informatie van de opleiding</p>
+                            </div>
+                            <span class="material-icons md-66">shopping_bag</span>
+                        </div>
+                    </a>
+
                 </div>
               
  <!-- Div that is hidden --> 
@@ -135,4 +173,7 @@
                
             </div>
         </div>
+
+        <script src="/js/afdelingen.js"></script>
     </body>
+</html>

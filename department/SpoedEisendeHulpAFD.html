@@ -1,5 +1,4 @@
 <!-- overzicht van alle functies per gekozen afdeling -->
-<!-- overzicht van alle afdelingen & opleidingen-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +9,6 @@
 
         <title>Functies Spoedeisende Hulp</title>
 
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="/css/menu.css">
         <link rel="stylesheet" href="/css/afdelingen.css">
@@ -19,12 +16,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round"rel="stylesheet">
         <!-- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"> -->
-
-        <!-- <script src="src/index.js"></script> -->
-
-        
-
     </head>
+
     <body>
         <nav>
             <ul>
@@ -36,12 +29,11 @@
             </ul>
         </nav>
 
-
         <div class="page-header">
             <a href="#" onclick="javascript:window.history.back(-1);return false;">
                 <span class="material-icons md-48">arrow_back_ios</span>
             </a>
-            <h1 class="AFD">Afdeling SEH</h1>
+            <h1 class="department-title">Carrière</h1>
         </div>
 
         <div class="body-container">
@@ -52,58 +44,40 @@
                 </div>
 
                 <div class="filter-wrapper">
-                    <div class="filter-1"><h4>Bekijk hier functies van SEH </h4>
-                        </div>
-                    
+                    <div id="filter-functie" class="filter"><h4>Alle functies van Spoedeisende Hulp</h4></div>
                 </div>
-
-                
-
-
-
-                <div class="label-containerAFD">
-                    
-                    <div class="label">
-                        <div class="label-content"><h2>Acute Zorg</h2><p>Bekijk hier alle functies van de acute zorg</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>Medische ondersteuning</h2><p>Bekijk hier alle functies voor acute medische ondersteuning</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>SEH</h2><p>Bekijk hier alle functies voor Spoedeisende hulp</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>IC&MC</h2><p>Bekijk hier alle functies voor Intensive Care & Medium Care</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>OK</h2><p>Bekijk hier alle functies van de Operatiekamer</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>EHH</h2><p>Bekijk hier alle functies van de Eerst Hart Hulp</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>CCU</h2><p>Bekijk hier alle functies van de Cardiac Care Unit</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>HCK</h2><p>Bekijk hier alle functies van de Hartcatherisatiekamers</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                    <div class="label">
-                        <div class="label-content"><h2>Afdeling</h2><p>Dit is een tekst voor de beschrijving</p></div>
-                        <span class="material-icons md-66">supervised_user_circle</span>
-                    </div>
-                </div>
-              
-
  
-               
+                <div class="label-container">
+                    <a href="/detailFuncties.html">
+                        <div id="filter-functie" class="label functie">
+                            <div class="label-content">
+                                <h2>Functie 1</h2>
+                                <p>Bekijk hier alle informatie van de functie</p>
+                            </div>
+                            <span class="material-icons md-66">account_circle</span>
+                        </div>
+                    </a>
+                    <a href="/detailFuncties.html">
+                        <div id="filter-functie" class="label functie">
+                            <div class="label-content">
+                                <h2>Functie 2</h2>
+                                <p>Bekijk hier alle informatie van de functie</p>
+                            </div>
+                            <span class="material-icons md-66">account_circle</span>
+                        </div>
+                    </a>
+                    <a href="/detailFuncties.html">
+                        <div id="filter-functie" class="label functie">
+                            <div class="label-content">
+                                <h2>Functie 3</h2>
+                                <p>Bekijk hier alle informatie van de functie</p>
+                            </div>
+                            <span class="material-icons md-66">account_circle</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
+        <script src="/js/department.js"></script>
     </body>
+</html>

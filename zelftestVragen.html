@@ -45,8 +45,7 @@
             <a href="#" onclick="javascript:window.history.back(-1);return false;">
                 <span class="material-icons md-48">arrow_back_ios</span>
             </a>
-            <h1>Carriere</h1>
-            <span class="material-icons md-66">manage_accounts</span>
+            <h1>Zelftest</h1>
         </div>
 
         <div class="body-container">
@@ -55,11 +54,11 @@
                 <!-- Div that is shown -->
                 <div class="label-container">   
                     <div class="label2">
+                        <div class="label-substractions-bottom">
+                            <img src="images/subtractions_2.png">
+                        </div>
                         <div class="label-content">
-                            <div class="label-substractions-bottom">
-                                <img src="images/subtractions_test.png">
-                            </div>
-                            <div class="zelftestresultaat-title">
+                            <div class="zelftestvragen-title">
                                 <h1>Vraag</h1>
                             </div>
                             <div class="label-description">
@@ -67,11 +66,28 @@
                             </div>
                         </div>
                     </div>
-                    <h2>Antwoorden</h2>
+                    <div class="label-category">
+                        <h2>Antwoord</h2>
+                    </div>
                     <div class="answers">
-                        <span><input type="radio" id="1" name="answer" value="1"><label for="1">Dit is het eerste antwoord</label></span>
-                        <span><input type="radio" id="1" name="answer" value="1"><label for="2">Dit is het tweede antwoord</label></span>
-                        <span><input type="radio" id="1" name="answer" value="1"><label for="3">Dit is het derde antwoord</label></span>
+                        <label class="answers-container">Dit is het eerste antwoord
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="answers-container">Dit is het tweede antwoord
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="answers-container">Dit is het derde antwoord
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                    <div class="counter">
+                        <span>Vraag 1 van 10</span>
+                    </div>
+                    <div class="button">
+                        <button>Volgende</button>
                     </div>
                 </div>
             </div>

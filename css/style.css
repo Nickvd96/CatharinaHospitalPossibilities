@@ -72,7 +72,13 @@ a {
     vertical-align: baseline;
     background: transparent;
     text-decoration: none;
-    color: var(--white);   
+    color: var(--white);  
+    z-index:1 
+}
+
+.page-header a {
+    margin-top: 1vh;
+    margin-left: 1vh;
 }
 
 /* Header title */
@@ -181,7 +187,7 @@ p {
     z-index: 0;
 }
 
-.label {
+.label, .label2, .label3, .label4 {
     display: flex;
     flex-direction: row;
     margin-bottom: 1.1vh;
@@ -200,8 +206,6 @@ p {
     color: var(--darkpurple);
     opacity: 50%;
 }
-
-
 
 @media screen and (max-height: 760px) {
     .label-container {

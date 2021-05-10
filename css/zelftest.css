@@ -41,11 +41,14 @@ body {
     background-image: linear-gradient(#E9C165, white);
     height: 74px;
     width: 100%;
-    opacity: 0.90;
+    opacity: 0.80;
 }
 
 .page-header h1 {
+    position: absolute;
     z-index: 1;
+    top: 2vh;
+    left: 15vh;
 }
 
 .body-container {
@@ -70,7 +73,7 @@ body {
     /* display: flex; */
     flex-direction: column;
     top: 12vh;
-    width: 318px;
+    /* width: 318px; */
 }
 
 .label-container p {
@@ -79,9 +82,13 @@ body {
     padding-bottom: 3vh;
 }
 
+.label-category h2 {
+    padding-top: 3vh;
+}
+
 .label-container h2 {
     color: #5F3869;
-    padding-bottom: 1vh
+    font-size: 18pt;
 }
 
 .label { 
@@ -102,7 +109,6 @@ body {
     background-image: linear-gradient(#E7E7E7, #EBD9FF);
     width: 100%;
     height: 176px;
-    margin-bottom: 3vh;
 } 
 
 .label3 {
@@ -113,7 +119,8 @@ body {
     background-image: linear-gradient(#E7E7E7, #FFF4D9);
     width: 100%;
     height: 104px;
-    margin-bottom: 3vh;
+    margin-bottom: 1.1vh;
+    
 }
 
 .label-content {
@@ -123,31 +130,32 @@ body {
 
 .zelftest-title h1 {
     position: absolute;
-    top: 6vh;
-    right: 2.5vh;
-    font-size: 31px;
+    top: 5.5vh;
+    right: 2vh;
+    font-size: 28pt;
     color: #5F3869;
 }
 
-.zelftestresultaat-title h1 {
-    padding-top: 2vh;
+.zelftestvragen-title h1, .zelftestresultaat-title h1 {
+    font-size: 28pt;
+    padding-top: 1vh;
     color: #5F3869;
 }
 
 .label-content h3 {
-    font-size: 28px;
+    font-size: 28pt;
     color: #5F3869;
 }
 
 .label-icon {
     position: absolute;
-    top: 4vh;
-    left: 2.5vh;
+    top: 5vh;
+    left: 2 vh;
 }
 
 .label-icon img {
-    width: 65px;
-    height: 65px;
+    width: 45px;
+    height: 45px;
 }
 
 .label-icon2 {
@@ -162,6 +170,18 @@ body {
     opacity: 0.5
 }
 
+.label-icon3 {
+    position: absolute;
+    top: 2.5vh;
+    right: 1vh;
+}
+
+.label-icon3 img {
+    width: 90px;
+    height: 90px;
+    opacity: 0.90;
+}
+
 .label .label-substractions-bottom, .label2 .label-substractions-bottom, .label3 .label-substractions-bottom  {
     position: absolute;
     right: 5vh;
@@ -173,35 +193,124 @@ body {
     bottom: 0;
 }
 
-.label-data {
+.label-substractions-bottom img{
+    width: 125px;
+}
+
+.label-data, .label-data2 {
     display: flex;
     flex-direction: row;
     z-index: 1;
     position: relative;
 }
 
-.label-data span {
+.label-data span, .label-data2 span {
     display: flex;
     flex-direction: row;
     margin-right: 0.5vh
 }
 
-.label-data p {
+.label-data p, .label-data2 p {
     font-size: 14pt;
+}
+
+.label-data2 {
+    width: 200px;
 }
 
 .label-description {
-    padding-top: 2vh;
+    padding-top: 0.75vh;
     font-size: 14pt;
 }
 
-.answers {
-    display: flex;
-    flex-direction: column;
+.answers-container {
+    display: block;
+    position: relative;
+    padding: 1.5vh 0 1.5vh 5vh;
+    margin-bottom: 1.25vh;
+    cursor: pointer;
+    font-size: 14pt;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #5F3869;
+    border-radius: 1vh;
+    color: #fff;
 }
 
+/* Verberg het standaard keuzerondje van de browser */
+.answers-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
 
+/* Maak een aangepast keuzerondje */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.75vh 0 2vh 0.5vh;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+}
 
+/* Voeg bij mouse-over een grijze achtergrondkleur toe */
+.answers-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* Voeg een blauwe achtergrond toe als het keuzerondje is aangevinkt */
+.answers-container input:checked ~ .checkmark {
+    background-color: #fff;
+}
+
+/* Maak de indicator (de stip / cirkel - verborgen indien niet aangevinkt) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Toon de indicator (punt / cirkel) indien aangevinkt */
+.answers-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Stijl de indicator (punt / cirkel) */
+.answers-container .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #5F3869;
+}
+
+.counter {
+    position: absolute;
+    right: 0;
+    font-size: 17pt;
+    color: #E9C165;
+}
+
+.button {
+    position: absolute;
+    bottom: 15vh;
+    right: 0;
+}
+
+.button button {
+    background: #5F3869;
+    color: #fff;
+    border-radius: 1vh;
+    padding: 1vh 2vh;
+    font-size: 20pt;
+    font-weight: bold;
+}
 
 
 

@@ -1,18 +1,19 @@
-<!-- overzicht van alle favorieten: opleidingen, functies & trainingen -->
+<!-- overzicht van alle zoekresultaten -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#009578">
-        <title>Favorieten</title>
+        <title>Zoeken</title>
 
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/afdelingen.css">
-        <link rel="stylesheet" href="css/favorieten.css">
+        <link rel="stylesheet" href="css/zoeken.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
         <!-- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"> -->
@@ -31,7 +32,7 @@
 
         <div class="page-header">
             <a href="#" onclick="javascript:window.history.back(-1);return false;"><span class="material-icons md-48">arrow_back_ios</span></a>
-            <h1>Favorieten</h1>
+            <h1>Zoeken</h1>
             <span class="material-icons md-66">manage_accounts</span>
         </div>
 
@@ -47,12 +48,31 @@
 <!-- FILTER BUTTONS -->
                 <div class="filter-wrapper">
                     <div id="filter-alles" class="filter">Alles</div>
+                    <div id="filter-afdeling" class="filter">Afdeling</div>
                     <div id="filter-functie" class="filter">Functie</div>
                     <div id="filter-opleiding" class="filter">Opleiding</div>
                 </div>
 
 <!-- LABEL LIST -->
                 <div class="label-container">
+                    <a href="#">
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>Afdeling 1</h2>
+                                <p>Bekijk hier alle informatie van de afdeling</p>
+                            </div>
+                            <span class="material-icons md-66">supervised_user_circle</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div id="filter-afdeling" class="label afdeling">
+                            <div class="label-content">
+                                <h2>Afdeling 2</h2>
+                                <p>Bekijk hier alle informatie van de afdeling</p>
+                            </div>
+                            <span class="material-icons md-66">supervised_user_circle</span>
+                        </div>
+                    </a>
                     <a href="#">
                         <div id="filter-functie" class="label functie">
                             <div class="label-content">
@@ -72,15 +92,6 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div id="filter-functie" class="label functie">
-                            <div class="label-content">
-                                <h2>Functie 3</h2>
-                                <p>Bekijk hier alle informatie van de functie</p>
-                            </div>
-                            <span class="material-icons md-66">account_circle</span>
-                        </div>
-                    </a>
-                    <a href="#">
                         <div id="filter-opleiding" class="label opleiding">
                             <div class="label-content">
                                 <h2>Opleiding 1</h2>
@@ -93,15 +104,6 @@
                         <div id="filter-opleiding" class="label opleiding">
                             <div class="label-content">
                                 <h2>Opleiding 2</h2>
-                                <p>Bekijk hier alle informatie van de opleiding</p>
-                            </div>
-                            <span class="material-icons md-66">shopping_bag</span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div id="filter-opleiding" class="label opleiding">
-                            <div class="label-content">
-                                <h2>Opleiding 3</h2>
                                 <p>Bekijk hier alle informatie van de opleiding</p>
                             </div>
                             <span class="material-icons md-66">shopping_bag</span>

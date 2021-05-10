@@ -257,6 +257,12 @@ p {
     background: linear-gradient(var(--gray), #d9e274);
 }
 
+/* ADD SPACING TO LEFT OF BACK BUTTON */
+.page-header > .material-icons.md-48 {
+    margin-left: 3.5vw;
+}
+
+
 @media screen and (max-height: 760px) {
     .label-container {
         top: 24vh;

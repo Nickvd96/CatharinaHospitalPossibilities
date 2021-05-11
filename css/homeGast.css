@@ -24,6 +24,7 @@ body::-webkit-scrollbar {
     display: flex;
     height: 100%;
     width: 100%;
+    background-image: url('/Images/guestBackground.png');
 }
 
 .profile-container > .profile-wrapper > .material-icons.md-66 {
@@ -76,20 +77,45 @@ body::-webkit-scrollbar {
     margin-right: 3.5vh;
 }
 
+.career-wrapper::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    background-image: url('/Images/careerBackground.png');
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 0%;
+    background-size: cover;
+    z-index: 1;
+}
+
 .career-wrapper {
+    position: relative;
     display: flex;
     flex-direction: row;
     margin-bottom: 1.75vh;
 
     height: 18vh;
     width: 100%;
-    background-color: var(--bluegreen);
     border-radius: 0.8vh;
+    box-shadow: 1px 1px 10px #b3b3b3;
     color: var(--white);
+    background: linear-gradient(var(--bluegreen), #EAF5F4);
+}
+
+.career-wrapper > .career-content > h2 {
+    position: relative;
+    z-index: 2;
 }
 
 .career-wrapper > .career-content > p {
+    position: relative;
     color: white;
+    text-shadow: 1px 1px 5px var(--bluegreen);
+    z-index: 2;
 }
 
 .career-content {
@@ -113,12 +139,29 @@ body::-webkit-scrollbar {
     opacity: 50%;
 }
 
+.favourites:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    background-image: url('/Images/favouritesBackground.png');
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 0%;
+    background-size: cover;
+    z-index: 1;
+}
+
 .favourites {
+    position: relative;
     display: flex;
     height: 100%;
     width: 45%;
-    background-color: var(--green);
+    background: linear-gradient(var(--green), #F9FBE3);
     border-radius: 0.8vh;
+    box-shadow: 1px 1px 10px #b3b3b3;
 
     justify-content: center;
     align-items: center;
@@ -137,12 +180,29 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
+.selftest:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    background-image: url('/Images/selftestBackground.png');
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 0%;
+    background-size: cover;
+    z-index: 1;
+}
+
 .selftest {
+    position: relative;
     display: flex;
     height: 100%;
     width: 45%;
-    background-color: var(--orange);
+    background: linear-gradient(var(--orange), #FCF6EA);
     border-radius: 0.8vh;
+    box-shadow: 1px 1px 10px #b3b3b3;
 
     justify-content: center;
     align-items: center;

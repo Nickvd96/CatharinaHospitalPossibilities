@@ -76,6 +76,14 @@ a {
     z-index:1 
 }
 
+nav > ul > li > a > span {
+    color: var(--lightpurple);
+}
+
+#button-highlight {
+    color: var(--white);
+}
+
 .page-header a {
     margin-top: 1vh;
     margin-left: 1vh;

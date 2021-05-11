@@ -152,8 +152,8 @@ h5 {
 }
 
 #password-visibility {
-    margin-left: -0.5vh;
-    margin-right: 1vh;
+    right: 3vh;
+    position: absolute;
 }
 
 .username-field, .password-field {
@@ -168,6 +168,11 @@ h5 {
     border: none;
     border-radius: 0vh 5vh 5vh 0vh;
     background: none
+}
+
+span#myPassword {
+    right: 3vh;
+    position: absolute;
 }
 
 .button-guest, .button-member {
@@ -189,3 +194,5 @@ h5 {
 .button-guest {
     background-color: var(--blue)
 }
+
+

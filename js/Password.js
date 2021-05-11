@@ -1,8 +1,8 @@
-function passwordFunction(){
-    const passwordVisible = document.querySelector(".password-field");
-    if (passwordVisible.type === "password") {
-        passwordVisible.type = "text";
+function passwordVisibility() {
+    var x = document.getElementById("thePassword");
+    if (x.type === "password") {
+        x.type = "text";
     } else {
-        passwordVisible.type = "password";
+        x.type = "password"
     }
 }

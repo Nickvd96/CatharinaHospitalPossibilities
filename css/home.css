@@ -107,6 +107,7 @@ body::-webkit-scrollbar {
     box-shadow: 1px 1px 10px #b3b3b3;
     color: var(--white);
     background: linear-gradient(var(--bluegreen), #EAF5F4);
+    z-index: 1;
 }
 
 .career-wrapper > .career-content > h2 {
@@ -139,6 +140,7 @@ body::-webkit-scrollbar {
     flex-direction: row;
     height: 13vh;
     width: 100%;
+    z-index: 1;
 }
 
 .favourites:before {
@@ -215,6 +217,10 @@ body::-webkit-scrollbar {
     color: var(--darkpurple);
     justify-content: center;
     word-wrap: break-word;
+}
+
+nav > ul {
+    z-index: 2;
 }
 
 

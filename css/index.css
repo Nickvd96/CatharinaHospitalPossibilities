@@ -60,6 +60,7 @@ h5 {
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 3.5vh;
+    z-index: 2;
 }
 
 .logo-text-wrapper {
@@ -92,12 +93,38 @@ h5 {
     z-index: 2;
 }
 
+.shape-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.shape-small {
+    position: fixed;
+    top: 90px;
+    left: -75px;
+    width: 162px;
+    height: 201px;
+
+}
+
+.shape-large {
+    position: fixed;
+    top: 397px;
+    right: -180px;
+    width: 412px;
+    height: 512px;
+}
+
 .product-container {
     display: flex;
     justify-content: flex-end;
-    margin-top: 20vh;
+    margin-top: 17.5vh;
     margin-bottom: 10vh;
-    height: 27.5vh;
+    height: 25vh;
+    z-index: 2;
 }
 
 .product-wrapper {
@@ -109,15 +136,28 @@ h5 {
     height: 225px;
     width: 225px;
     border-radius: 50%;
-    background-color: var(--bluegreen);
+    background-image: linear-gradient(var(--bluegreen), #c9e5e1e7);
 }
 
 .product-wrapper > h5, p {
     color: white;
 }
 
+.product-wrapper > h5 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.product-wrapper > p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3.5px;
+}
+
 .login-container {
+    position: relative;
     height: 10vh;
+    z-index: 5;
 }
 
 .button-wrapper {

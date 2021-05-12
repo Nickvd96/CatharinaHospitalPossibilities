@@ -25,6 +25,8 @@ body::-webkit-scrollbar {
     height: 100%;
     width: 100%;
     background-image: url('/Images/profileBackground.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .profile-container > .profile-wrapper > .material-icons.md-66 {

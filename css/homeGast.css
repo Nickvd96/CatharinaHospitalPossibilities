@@ -217,6 +217,11 @@ body::-webkit-scrollbar {
     word-wrap: break-word;
 }
 
+/* MAKE FAVOURITES BUTTON GRAYSCALE */
+#menu-favourites {
+    color: #4b2855;
+}
+
 
 
 /* SOURCES */

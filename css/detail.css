@@ -23,6 +23,11 @@ body {
     z-index: 1;
 }
 
+.material-icons.md-66 {
+    color: #5F3869;
+    opacity: 0.5;
+}
+
 .menu-image {
     position: absolute;
     height: 74px;

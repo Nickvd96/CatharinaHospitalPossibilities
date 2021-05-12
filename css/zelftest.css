@@ -147,10 +147,15 @@ body {
     color: #5F3869;
 }
 
+.material-icons.md-66 {
+    color: #5F3869;
+    opacity: 0.5;
+}
+
 .label-icon {
     position: absolute;
-    top: 5vh;
-    left: 2 vh;
+    top: 3vh;
+    left: 0vh;
 }
 
 .label-icon img {
@@ -167,7 +172,6 @@ body {
 .label-icon, .label-icon2 img {
     width: 65px;
     height: 65px;
-    opacity: 0.5
 }
 
 .label-icon3 {

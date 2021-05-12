@@ -30,6 +30,7 @@ body {
     background-image: url('/Images/menu_test_background.png');
     background-position: 0px -5vh;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .menu-image img{

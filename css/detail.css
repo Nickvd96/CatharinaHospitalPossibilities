@@ -35,6 +35,7 @@ body {
     background-image: url('/Images/menu_career_background.png');
     background-position: 0px -5vh;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .menu-image img{

@@ -180,6 +180,7 @@ body::-webkit-scrollbar {
     flex-direction: row;
     height: 13vh;
     width: 100%;
+    z-index: 1;
 }
 
 .selftest:before {
@@ -194,7 +195,6 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-position: right 0% bottom 0%;
     background-size: cover;
-    z-index: 1;
 }
 
 .selftest {

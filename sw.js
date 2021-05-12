@@ -6,8 +6,8 @@ self.addEventListener("install", e =>{
                                 "detailFuncties.html",
                                 "favorieten.html",
                                 "home.html",
-                                ,"./Images/logo192.png",
-                                "./images/subtractions_test.png"
+                                "./Images/logo192.png",
+                                "./Images/subtractions_test.png"
                             ]);
         })
     );

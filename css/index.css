@@ -195,4 +195,7 @@ span#myPassword {
     background-color: var(--blue)
 }
 
+#password-visibility {
+    cursor: pointer;
+}
 

@@ -195,6 +195,7 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-position: right 0% bottom 0%;
     background-size: cover;
+    z-index: 1;
 }
 
 .selftest {

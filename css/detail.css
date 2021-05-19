@@ -232,7 +232,7 @@ body {
 }
 
 .label-description p, .label-description2 p, .label-description3 p {
-    font-size: 14pt;
+    font-size: 0.9em;
 }
 
 .label-description3 {
@@ -241,7 +241,7 @@ body {
 
 .label-icon2 {
     position: absolute;
-    top: 2.5vh;
+    top: 3vh;
     right: 1vh;
 }
 

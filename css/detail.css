@@ -149,7 +149,7 @@ body {
 
 .label-substractions-bottom, .label-substractions-bottom-2{
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
 }
 
 .label-substractions-bottom-2 img {

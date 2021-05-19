@@ -208,6 +208,11 @@ p {
 .label > .label-content > h2, p {
     color:var(--darkpurple)
 }
+.label-description3 > span > p > b > a {
+
+    color: var(--darkpurple);
+
+}
 
 .label > .material-icons.md-66 {
     margin-left: 1vh;

@@ -168,7 +168,7 @@ body {
 }
 
 .label-title span h1 {
-    font-size: 16pt;
+    font-size: 16px;
     color: #5F3869;
 }
 
@@ -179,7 +179,7 @@ body {
 }
 
 .label-title .material-icons.md-36 {
-    font-size: 20pt;
+    font-size: 20px;
 }
 
 .label-content {
@@ -188,7 +188,7 @@ body {
 }
 
 .label-content h3 {
-    font-size: 28pt;
+    font-size: 28px;
     color: #5F3869;
 }
 
@@ -215,7 +215,7 @@ body {
 }
 
 .label-data .material-icons.md-36 {
-    font-size: 16pt;
+    font-size: 16px;
 }
 
 .label-data .time {
@@ -224,7 +224,7 @@ body {
 
 .label-description, .label-description2, .label-description3 {
     padding-top: 0.75vh;
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 .label-description2 {
@@ -232,7 +232,7 @@ body {
 }
 
 .label-description p, .label-description2 p, .label-description3 p {
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 .label-description3 {
@@ -253,11 +253,23 @@ body {
 
 .label-category h2 {
     padding-top: 3vh;
-    font-size: 18pt;
+    font-size: 18px;
 }
 
+/* BUGFIXES || NEGATING CSS FROM STYLE.CSS */
+.label > .label-content > h2, p {
+    display: block;
+    width: auto;
+}
 
+.label-content {
+    width: auto;
+}
 
+.label-data {
+    justify-content: space-between;
+    font-size: 0.9em;
+}
 
 
 

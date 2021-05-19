@@ -7,7 +7,7 @@ body {
 h5 {
     color: var(--darkpurple);
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 40px;
 }
 
 .white-corner {
@@ -74,7 +74,7 @@ h5 {
 }
 
 .logo-subtitle > p {
-    font-size: 1.05em;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -192,7 +192,7 @@ h5 {
 }
 
 #password-visibility {
-    right: 3vh;
+    right: 1vh;
     position: absolute;
 }
 
@@ -203,7 +203,7 @@ h5 {
     width: 100%;
     color: var(--darkpurple);
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: 14px;
     outline: none;
     border: none;
     border-radius: 0vh 5vh 5vh 0vh;
@@ -220,7 +220,7 @@ span#myPassword {
     color: white;
     border-radius: 0.5vh;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 19px;
     border: none;
     outline: none;
 }
@@ -238,4 +238,15 @@ span#myPassword {
 #password-visibility {
     cursor: pointer;
 }
+
+/* BUGFIXES || NEGATING CSS FROM STYLE.CSS */
+.label > .label-content > h2, p {
+    display: block;
+    width: auto;
+}
+
+.label-content {
+    width: auto;
+}
+
 

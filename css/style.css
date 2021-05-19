@@ -92,29 +92,29 @@ nav > ul > li > a > span {
 /* Header title */
 h1 {
     font-weight: 700; 
-    font-size: 2em;
+    font-size: 32px;
     color: white;
 }
 
 /* Label title */
 h2 {
     font-weight: 700; 
-    font-size: 1.65em;
+    font-size: 28px;
     margin-bottom: 0.5vh;
 }
 
 /* Function/course title 
 h3 {}*/
 
-h4 {
+/* h4 {
     font-weight: 700; 
     font-size: 1em;
     color: white;
-}
+} */
 
 p {
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: 14px;
     line-height: 1.5em;
 }
 
@@ -145,7 +145,7 @@ p {
     width: 100%;
     color: var(--darkpurple);
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: 14px;
     border: none;
     border-radius: 0vh 5vh 5vh 0vh;
     background: none;

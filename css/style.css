@@ -217,6 +217,11 @@ p {
 .label-content {
     width: 100%;
 }
+.label-description3 > span > p > b > a {
+
+    color: var(--darkpurple);
+
+}
 
 .label > .material-icons.md-66 {
     margin-left: 1vh;

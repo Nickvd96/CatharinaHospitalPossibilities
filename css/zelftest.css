@@ -317,7 +317,15 @@ body {
     font-weight: bold;
 }
 
+/* BUGFIXES || NEGATING CSS FROM STYLE.CSS */
+.label > .label-content > h2, p {
+    display: block;
+    width: auto;
+}
 
+.label-content {
+    width: auto;
+}
 
 
 

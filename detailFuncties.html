@@ -44,7 +44,7 @@
                 <div class="label-container">   
                     <div class="label-image">
                         <div class="label-title">
-                            <span><h1>Functie naam</h1><div class="material-icons md-36">bookmark_border</div></span>
+                            <span><h1>Functie naam</h1><div class="material-icons md-36" id="bookmark" onclick="myFavorite()">bookmark_border</div></span>
                         </div>
                         <img src="Images/detail-functie_voorbeeldafbeelding.jpg">
                     </div>
@@ -183,5 +183,15 @@
                 </div>
             </div>
         </div>
+        <script>
+            function myFavorite() {
+              var x = document.getElementById("bookmark");
+              if (x.innerHTML === "bookmark_border") {
+                x.innerHTML = "bookmark";
+              } else {
+                x.innerHTML = "bookmark_border";
+              }
+            }
+        </script>
     </body>
 </html>

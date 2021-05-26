@@ -103,8 +103,13 @@ h2 {
     margin-bottom: 0.5vh;
 }
 
+h3{
+    color: #5F3869;
+    font-size: 16px;
+    margin-bottom: 1vh;
+}
 /* Function/course title 
-h3 {}*/
+
 
 /* h4 {
     font-weight: 700; 
@@ -282,6 +287,20 @@ p {
 /* ADD SPACING TO LEFT OF BACK BUTTON */
 .page-header > .material-icons.md-48 {
     margin-left: 3.5vw;
+}
+
+.Contactpersoon-img
+{
+    margin-left: 7vh;
+}
+.Contactpersoon-Title
+{
+    margin-left: 2vh;
+    margin-bottom: 1vh;
+}
+.contact{
+    background: linear-gradient(var(--gray), #B08BB9);
+
 }
 
 

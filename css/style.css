@@ -213,23 +213,28 @@ p {
     border-radius: 0.8vh;
 }
 
-.label > .label-content > h2, p {
+.label > .label-content > h2, .label > .label-content > p {
     display: flex;
     color:var(--darkpurple);
-    width: 100%;
+    width: 75%;
 }
 
 .label-content {
     width: 100%;
 }
 .label-description3 > span > p > b > a {
-
     color: var(--darkpurple);
-
 }
 
 .label > .material-icons.md-66 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 2%;
     margin-left: 1vh;
+    height: 100%;
+    align-items: center;
+
     color: var(--darkpurple);
     opacity: 50%;
 }
@@ -243,7 +248,7 @@ p {
     content: ' ';
     display: block;
     position: absolute;
-    right: 12%;
+    right: 10%;
     bottom: 0%;
     width: 30%;
     height: 100%;

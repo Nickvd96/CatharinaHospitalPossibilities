@@ -317,6 +317,24 @@ body {
     font-weight: bold;
 }
 
+/* Zelftest simulatie */
+
+#form2 {
+    display: none;
+}
+
+#form3 {
+    display: none;
+}
+
+#button2 {
+    display: none;
+}
+
+#button3 {
+    display: none;
+}
+
 
 
 

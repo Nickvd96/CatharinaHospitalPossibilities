@@ -84,11 +84,6 @@ nav > ul > li > a > span {
     color: var(--white);
 }
 
-.page-header a {
-    margin-top: 1vh;
-    margin-left: 1vh;
-}
-
 /* Header title */
 h1 {
     font-weight: 700; 
@@ -287,11 +282,6 @@ p {
     position: relative;
     /* background: linear-gradient(var(--gray), var(--green)); */
     background: linear-gradient(var(--gray), #d9e274);
-}
-
-/* ADD SPACING TO LEFT OF BACK BUTTON */
-.page-header > .material-icons.md-48 {
-    margin-left: 3.5vw;
 }
 
 .Contactpersoon-img

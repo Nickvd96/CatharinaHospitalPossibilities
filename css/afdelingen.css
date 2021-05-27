@@ -41,6 +41,16 @@
     left: 15vh;
 }
 
+.page-header a {
+    margin-top: 1vh;
+    margin-left: 1vh;
+}
+
+/* ADD SPACING TO LEFT OF BACK BUTTON */
+.page-header > .material-icons.md-48 {
+    margin-left: 3.5vw;
+}
+
 .filter {
     cursor: pointer;
 }

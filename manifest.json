@@ -2,7 +2,7 @@
     
     "name": "Hospital Career App",
     "short_name": "Career App",
-    "start_url": "https://i356100.hera.fhict.nl/",
+    "start_url": "https://i356100.hera.fhict.nl/index.html",
     "background_color": "#FFFFFF",
     "theme_color": "#009578",
     "display": "standalone",

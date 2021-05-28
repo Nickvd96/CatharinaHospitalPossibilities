@@ -181,7 +181,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     min-height: 13vh;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     width: 100%;
     z-index: 1;
 }

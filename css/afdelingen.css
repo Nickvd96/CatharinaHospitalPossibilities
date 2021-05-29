@@ -2,7 +2,7 @@
     padding: 0vh 0vh 0.5vh 0vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     background: linear-gradient(var(--bluegreen), var(--gray));
@@ -36,14 +36,16 @@
 
 .page-header h1 {
     position: absolute;
+    margin: 0 auto;
     z-index: 1;
     top: 2vh;
-    left: 15vh;
 }
 
 .page-header a {
     margin-top: 1vh;
     margin-left: 1vh;
+    left: 0;
+    width: 100vw;
 }
 
 /* ADD SPACING TO LEFT OF BACK BUTTON */

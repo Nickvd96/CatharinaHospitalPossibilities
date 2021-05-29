@@ -4,6 +4,14 @@ let currentFilter = 'filter-alles';
 let currentSearch = '';
 // console.log(document.querySelectorAll('.filter'));
 
+// PULL STORED TEXT FROM SESSION STORAGE (FROM HOME.HTML SEARCHBAR)
+let storedSearch = sessionStorage.getItem("searchStorage");
+// console.log(storedSearch);
+
+// ADD STORED SEARCH TERM INTO INPUT FIELD AND CLEAR STORED DATA AFTER USE
+document.querySelector('input.search-field').value = storedSearch;
+sessionStorage.removeItem("searchStorage");
+
 function applyFilter() {
     // CHANGE COLORS OF FILTER BUTTONS AND UPDATE CURRENTFILTER TO TARGET
     for (let j = 0 ; j < filters.length; j++) {

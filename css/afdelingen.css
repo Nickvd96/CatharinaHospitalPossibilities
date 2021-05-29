@@ -36,7 +36,6 @@
 
 .page-header h1 {
     position: absolute;
-    margin: 0 auto;
     z-index: 1;
     top: 2vh;
 }

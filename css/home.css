@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
     background-color: white;
     z-index: 1;
     border-radius: 5px 5px 0 0;
-    overflow-y: scroll;
+
 }
 
 .body-wrapper {
@@ -181,7 +181,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     min-height: 13vh;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     width: 100%;
     z-index: 1;
 }

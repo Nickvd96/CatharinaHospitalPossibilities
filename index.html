@@ -48,23 +48,23 @@
                     </div>
                 </div>
 
-                <form method="POST" action="home.html">
+                <form name="myForm" method="POST" action="home.html" onsubmit="return validateForm()">
                     <div class="login-container">
                         <div class="login-wrapper">
 
                             <div class="username-wrapper">
                                 <span class="material-icons md-28">account_circle</span>
-                                <input type="text" class="username-field" placeholder="Gebruikersnaam" required>
+                                <input type="text" name="degebruikersnaam" class="username-field" placeholder="Gebruikersnaam">
                             </div>
                             <div class="password-wrapper">
                                 <span class="material-icons md-28">lock</span>
-                                <input type="password" class="password-field" id="thePassword" placeholder="Wachtwoord" required>
+                                <input type="password" name="dewachtwoord" class="password-field" id="thePassword" placeholder="Wachtwoord">
                                 <span id="password-visibility" class="material-icons md-28" onclick="passwordVisibility()">visibility</span>
                             </div>
 
                             <div class="button-wrapper">
-                                <a href="/homeGast.html"><div class="button-guest">Log in als gast</div></a>
-                                <a href="/home.html"><button type="button" class="button-member">Log in</button></a>
+                                <a href="homeGast.html"><div class="button-guest">Log in als gast</div></a>
+                                <a href="home.html"><button type="submit" class="button-member">Log in</button></a>
                             </div>
                         </div>
                     </div>
@@ -72,6 +72,19 @@
 
             </div>
         </div>
+        <script>
+        function validateForm() {
+        var x = document.forms["myForm"]["degebruikersnaam"].value;
+        var y = document.forms["myForm"]["dewachtwoord"].value;
+            if (x == "") {
+                alert("U moet uw gebruikersnaam invoeren");
+                return false;
+            } else if (y == "") {
+                alert("U moet uw wachtwoord invoeren");
+                return false;
+            }
+        }
+        </script>
         <script src="js/Password.js"></script>
     </body>
     

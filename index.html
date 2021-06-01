@@ -48,7 +48,7 @@
                     </div>
                 </div>
 
-                <form name="myForm" method="POST" action="home.html" onsubmit="return validateForm()">
+                <form name="myForm" method="POST" action="home.html"">
                     <div class="login-container">
                         <div class="login-wrapper">
 
@@ -64,7 +64,7 @@
 
                             <div class="button-wrapper">
                                 <a href="homeGast.html"><div class="button-guest">Log in als gast</div></a>
-                                <a href="home.html"><button type="button" class="button-member">Log in</button></a>
+                                <a href="home.html"><button type="button" onclick="return validateForm()" class="button-member">Log in</button></a>
                             </div>
                         </div>
                     </div>

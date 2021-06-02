@@ -16,16 +16,6 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round"rel="stylesheet">
         <!-- <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"> -->
         <!-- <script src="src/index.js"></script> -->
-
-        <style>
-            .label-container .material-icons.md-36 {
-                color: #5F3869;
-            }
-
-            .label-data .material-icons.md-36 {
-                font-size: 18pt;
-            }
-        </style>
     </head>
     <body>
         <nav>
@@ -55,14 +45,14 @@
                 <div class="label-container">   
                     <div class="label2">
                         <div class="label-substractions-bottom">
-                            <img src="Images/subtractions_2.png">
+                            <img src="images/subtractions_2.png">
                         </div>
                         <div class="label-content">
                             <div class="zelftestvragen-title">
-                                <h1>Vraag</h1>
+                                <h2>Vraag</h2>
                             </div>
                             <div class="label-description">
-                                <p>Dit is een tekst voor de beschrijving van de zelftest. Dit is een tekst voor de beschrijving van de zelftest.</p>
+                                <p id="vraag">Hier komt de eerste vraag te staan?</p>
                             </div>
                         </div>
                     </div>
@@ -70,29 +60,72 @@
                         <h2>Antwoord</h2>
                     </div>
                     <div class="answers">
-                        <label class="answers-container">Dit is het eerste antwoord
-                            <input type="radio" checked="checked" name="radio">
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="answers-container">Dit is het tweede antwoord
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                          </label>
-                          <label class="answers-container">Dit is het derde antwoord
-                            <input type="radio" name="radio">
-                            <span class="checkmark"></span>
-                          </label>
+                        <form name="myForm" id="form1" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                            <label class="answers-container">Dit is het eerste antwoord
+                                <input type="radio" name="radio" value="answer">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="answers-container">Dit is het tweede antwoord
+                                <input type="radio" name="radio" value="answer2">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="answers-container">Dit is het derde antwoord
+                                <input type="radio" name="radio" value="answer3">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <div class="counter">
+                                <span>Vraag 1 van 3</span>
+                            </div>
+                        </form>
+
+                        <form name="myForm2" id="form2" action="/action_page.php" onsubmit="return validateForm2()" method="post">
+                            <label class="answers-container">Dit is het eerste antwoord
+                                <input type="radio" name="radio2" value="answer">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="answers-container">Dit is het tweede antwoord
+                                <input type="radio" name="radio2" value="answer2">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="answers-container">Dit is het derde antwoord
+                                <input type="radio" name="radio2" value="answer3">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <div class="counter">
+                                <span>Vraag 2 van 3</span>
+                            </div>
+                        </form>
+
+                        <form name="myForm3" id="form3" action="/action_page.php" onsubmit="return validateForm3()" method="post">
+                            <label class="answers-container">Dit is het eerste antwoord
+                                <input type="radio" name="radio3" value="answer">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="answers-container">Dit is het tweede antwoord
+                                <input type="radio" name="radio3" value="answer2">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="answers-container">Dit is het derde antwoord
+                                <input type="radio" name="radio3" value="answer3">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <div class="counter">
+                                <span>Vraag 3 van 3</span>
+                            </div>
+                        </form>
                     </div>
-                    <div class="counter">
-                        <span>Vraag 1 van 10</span>
-                    </div>
-                    <a href="zelftestResultaat.html">
+
                         <div class="button">
-                            <button>Volgende</button>
+                            <button id="button" onclick="validateForm()">Volgende</button>
+                            <button id="button2" onclick="validateForm2()">Volgende</button>
+                            <button id="button3" onclick="validateForm3()">Resultaat</button>
                         </div>
-                    </a>
                 </div>
             </div>
         </div>
+        <script src="js/selftestQuestions.js"></script>
     </body>
 </html>

@@ -2,25 +2,40 @@ body {
     overflow: hidden !important; /* Hide scrollbars */
   }
 
-.page-header {
+  .page-header {
     padding: 0vh 0vh 0.5vh 0vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    /* background-color: var(--bluegreen); */
-    z-index: 1;
+    background: linear-gradient(var(--bluegreen), var(--gray));
 }
 
-.page-header > .material-icons.md-48, .material-icons.md-66 {
+.page-header > .material-icons.md-48, .page-header > .material-icons.md-66 {
     margin-top:0.5vh;
     margin-right: 1vh;
     margin-left: 1vh;
     height: fit-content;
     color: white;
-    position: relative;
+}
+
+.page-header h1 {
+    position: absolute;
     z-index: 1;
+    top: 2vh;
+}
+
+.page-header a {
+    margin-top: 1vh;
+    margin-left: 1vh;
+    left: 0;
+    width: 100vw;
+}
+
+/* ADD SPACING TO LEFT OF BACK BUTTON */
+.page-header > .material-icons.md-48 {
+    margin-left: 3.5vw;
 }
 
 .menu-image {
@@ -43,13 +58,6 @@ body {
     height: 74px;
     width: 100%;
     opacity: 0.80;
-}
-
-.page-header h1 {
-    position: absolute;
-    z-index: 1;
-    top: 2vh;
-    left: 15vh;
 }
 
 .body-container {
@@ -78,9 +86,10 @@ body {
 }
 
 .label-container p {
-    font-size: 14pt;
+    font-weight: 400;
+    font-size: 14px;
     color: #5F3869;
-    padding-bottom: 3vh;
+    /* padding-bottom: 3vh; */
 }
 
 .label-category h2 {
@@ -89,14 +98,13 @@ body {
 
 .label-container h2 {
     color: #5F3869;
-    font-size: 18pt;
 }
 
 .label { 
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 0 0 3vh 0;
+    padding: 0 0 0 0;
     background-image: linear-gradient(#E7E7E7, #EBD9FF);
     width: 100%;
     height: 104px;
@@ -106,18 +114,18 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 0 0 3vh 0;
+    padding: 0 0 0 0;
     background-image: linear-gradient(#E7E7E7, #EBD9FF);
     width: 100%;
-    height: 176px;
+    min-height: 176px;
 } 
 
 .label3 {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 0 0 3vh 0;
-    background-image: linear-gradient(#E7E7E7, #FFF4D9);
+    padding: 0 0 0 0;
+    background: linear-gradient(var(--gray), #e8cf95);
     width: 100%;
     height: 104px;
     margin-bottom: 1.1vh;
@@ -125,26 +133,29 @@ body {
 }
 
 .label-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding: 2vh 2.5vh 2vh 2.5vh;
     z-index: 1;
 }
 
-.zelftest-title h1 {
+.zelftest-title h2 {
     position: absolute;
-    top: 5.5vh;
-    right: 2vh;
-    font-size: 28pt;
+    top: 5vh;
+    right: 5vh;
+    font-size: 28px;
     color: #5F3869;
 }
 
 .zelftestvragen-title h1, .zelftestresultaat-title h1 {
-    font-size: 28pt;
+    font-size: 28px;
     padding-top: 1vh;
     color: #5F3869;
 }
 
 .label-content h3 {
-    font-size: 28pt;
+    font-size: 28px;
     color: #5F3869;
 }
 
@@ -155,8 +166,8 @@ body {
 
 .label-icon {
     position: absolute;
-    top: 3vh;
-    left: 0vh;
+    top: 2.5vh;
+    left: 2vh;
 }
 
 .label-icon img {
@@ -166,7 +177,7 @@ body {
 
 .label-icon2 {
     position: absolute;
-    top: 4vh;
+    top: 2.5vh;
     right: 2.5vh;
 }
 
@@ -193,13 +204,13 @@ body {
     opacity: 0.5;
 }
 
-.label-substractions-bottom{
+.label-substractions-bottom {
     position: absolute;
     bottom: -2px;
 }
 
-.label-substractions-bottom img{
-    width: 125px;
+.label-substractions-bottom img {
+    width: 100px;
 }
 
 .label-data, .label-data2 {
@@ -216,7 +227,7 @@ body {
 }
 
 .label-data p, .label-data2 p {
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 .label-data2 {
@@ -225,7 +236,7 @@ body {
 
 .label-description {
     padding-top: 0.75vh;
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 .answers-container {
@@ -234,7 +245,7 @@ body {
     padding: 1.5vh 0 1.5vh 5vh;
     margin-bottom: 1.25vh;
     cursor: pointer;
-    font-size: 14pt;
+    font-size: 14px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -255,10 +266,10 @@ body {
 .checkmark {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0.4vh;
     margin: 0.75vh 0 2vh 0.5vh;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     background-color: #eee;
     border-radius: 50%;
 }
@@ -287,8 +298,8 @@ body {
 
 /* Stijl de indicator (punt / cirkel) */
 .answers-container .checkmark:after {
-    top: 6px;
-    left: 6px;
+    top: 3px;
+    left: 3px;
     width: 19px;
     height: 19px;
     border-radius: 50%;
@@ -298,7 +309,7 @@ body {
 .counter {
     position: absolute;
     right: 0;
-    font-size: 17pt;
+    font-size: 17px;
     color: #E9C165;
 }
 
@@ -313,23 +324,46 @@ body {
     color: #fff;
     border-radius: 1vh;
     padding: 1vh 2vh;
-    font-size: 20pt;
+    font-size: 20px;
     font-weight: bold;
 }
 
-/* BUGFIXES || NEGATING CSS FROM STYLE.CSS */
-.label > .label-content > h2, p {
-    display: block;
-    width: auto;
+/* Zelftest simulatie */
+
+#form2 {
+    display: none;
 }
 
+#form3 {
+    display: none;
+}
+
+#button {
+    border: none;
+}
+
+#button2 {
+    display: none;
+    border: none;
+}
+
+#button3 {
+    display: none;
+    border: none;
+}
+
+/* BOTTOM SPACING CSS */
+.bottom-spacing {
+    margin-bottom: 3vh;
+}
+
+/* LABEL ICON FIX */
+.label-content, .material-icons.md-66 {
+    position: static;
+    z-index: 2;
+}
+
+/* BUGFIXES NEGATING CSS FROM STYLE.CSS */
 .label-content {
-    width: auto;
+width: auto;
 }
-
-
-
-
-
-
-

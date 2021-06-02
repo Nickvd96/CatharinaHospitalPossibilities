@@ -8,7 +8,7 @@
     background: linear-gradient(var(--bluegreen), var(--gray));
 }
 
-.page-header > .material-icons.md-48, .material-icons.md-66 {
+.page-header > .material-icons.md-48, .page-header > .material-icons.md-66 {
     margin-top:0.5vh;
     margin-right: 1vh;
     margin-left: 1vh;
@@ -74,4 +74,18 @@
 /* SPACING FIX */
 .department-title {
     margin-left: 0;
+}
+
+.label.functie.description, .label.functie.description:before {
+    background: none;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.label.functie.description > .label-content > p, .label.functie.description > .label-content > h2 {
+    width: 100%;
+}
+
+.label.functie.description > .label-content > h2 {
+    font-size: 20px;
 }

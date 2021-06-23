@@ -213,7 +213,6 @@ body::-webkit-scrollbar {
 }
 
 .favourites-content, .selftest-content {
-    /* padding-top: 1.vh; */
     padding-left: 1.8vh;
     width: 50%;
     color: var(--darkpurple);
@@ -226,9 +225,14 @@ body::-webkit-scrollbar {
     color: #4b2855;
 }
 
+@media screen and (max-width: 365px) {
+    h2 {
+        font-size: 26px;
+    }
+}
 
-
-/* SOURCES */
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func */
-/* https://codepen.io/huange/pen/rbqsD */
-/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+@media screen and (max-width: 345px) {
+    h2 {
+        font-size: 23px;
+    }
+}

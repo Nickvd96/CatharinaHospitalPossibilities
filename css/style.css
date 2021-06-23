@@ -39,7 +39,6 @@ time, mark, audio, video {
     background:transparent;
 }
 
-
 body {
     line-height:1;
     font-family: 'Poppins', sans-serif;
@@ -49,7 +48,6 @@ article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
 }
-
 
 nav ul {
     list-style:none;
@@ -103,14 +101,6 @@ h3{
     font-size: 16px;
     margin-bottom: 1vh;
 }
-/* Function/course title 
-
-
-/* h4 {
-    font-weight: 700; 
-    font-size: 1em;
-    color: white;
-} */
 
 p {
     font-weight: 400;
@@ -268,19 +258,17 @@ p {
 
 .label.afdeling {
     position: relative;
-    /* background: linear-gradient(var(--gray), var(--blue)); */
     background: linear-gradient(var(--gray), #a5cee1);
 }
 
 .label.functie {
     position: relative;
-    /* background: linear-gradient(var(--gray), var(--orange)); */
+    
     background: linear-gradient(var(--gray), #e8cf95);
 }
 
 .label.opleiding {
     position: relative;
-    /* background: linear-gradient(var(--gray), var(--green)); */
     background: linear-gradient(var(--gray), #d9e274);
 }
 

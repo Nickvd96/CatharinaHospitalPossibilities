@@ -61,7 +61,6 @@ body {
 }
 
 .body-container {
-    /* margin-top: -2vh; */
     height: 60vh;
     width: 100%;
     background-color: white;
@@ -79,17 +78,14 @@ body {
 }
 
 .label-container {
-    /* display: flex; */
     flex-direction: column;
     top: 12vh;
-    /* width: 318px; */
 }
 
 .label-container p {
     font-weight: 400;
     font-size: 14px;
     color: #5F3869;
-    /* padding-bottom: 3vh; */
 }
 
 .label-category h2 {
